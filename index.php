@@ -1,6 +1,6 @@
 <html>
 <head>
-    <Title>Registration Form</Title>
+    <Title>LeadMagnet</Title>
     <style type="text/css">
         body { background-color: #fff; border-top: solid 10px #000;
             color: #333; font-size: .85em; margin: 20; padding: 20;
@@ -17,13 +17,13 @@
 </head>
 
 <body>
-    <h1>Register here!</h1>
-    <p>Fill in your name and email address, then click <strong>Submit</strong> to register.</p>
+    <h1>LeadMagnet самое начало!</h1>
+    <p>Напишите имя и email что-бы присоедениться </p>
 
     <form method="post" action="index.php" enctype="multipart/form-data" >
-         Name  <input type="text" name="name" id="name"/></br>
-         Email <input type="text" name="email" id="email"/></br>
-    <input type="submit" name="submit" value="Submit" />
+         Name  <input type="text" name="Имя" id="name"/></br>
+         Email <input type="text" name="Почта" id="email"/></br>
+    <input type="submit" name="Я с Вами!" value="Submit" />
     </form>
 
     <?php
