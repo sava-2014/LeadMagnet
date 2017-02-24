@@ -31,7 +31,7 @@
         $host = "bd-lead-magnet.database.windows.net";
         $user = "sava2014";
         $pwd = "Admin12345";
-        $db = "BD_lead_magnet";
+        $db = "bd_users";
         // Connect to database.
         try {
             $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
