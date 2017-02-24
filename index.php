@@ -21,9 +21,9 @@
     <p>Напишите имя и email что-бы присоедениться </p>
 
     <form method="post" action="index.php" enctype="multipart/form-data" >
-         Name  <input type="text" name="Имя" id="name"/></br>
-         Email <input type="text" name="Почта" id="email"/></br>
-    <input type="submit" name="Я с Вами!" value="Submit" />
+         Имя  <input type="text" name="name" id="name"/></br>
+         Email <input type="text" name="email" id="email"/></br>
+    <input type="submit" name="submit" value="Я с Вами!" />
     </form>
 
     <?php
@@ -34,8 +34,8 @@
         $db = "bd_users";
         // Connect to database.
         try {
-            $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
-            $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+            $conn = new PDO("sqlsrv:server = tcp:bd-lead-magnet.database.windows.net,1433; Database = bd_users", "sava2014", "Admin12345");
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch(Exception $e){
             die(var_dump($e));
